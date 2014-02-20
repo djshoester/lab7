@@ -48,7 +48,7 @@ exports.deleteProject = function(req, res) {
 
   function afterRemove(err, projects) {
     if(err) console.log(err);
-    res.send();
+    res.send(500);
   }
   
   // find the project and remove it
